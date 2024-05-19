@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!--<form action="#" th:action="@{/saveEmployee}" th:object="${emp}" method="post">-->
+
+<!--Id<input type="number" th:field="*{id}"><br><br><br><br>
+Name<input type="text" th:field="*{name}"><br><br><br><br>
+Course<input type="text" th:field="*{course}"><br><br><br><br>
+Fees<input type="number" th:field="*{fee}"><br><br><br><br>-->
+ <div class="dropdown-menu">
+  <form class="px-4 py-3" action="#" th:action="@{/saveEmployee}" th:object="${emp}" method="post">
+    <div class="form-group">
+      <label for="input1">Employee ID</label>
+      <input type="number" class="form-control" id="input1" placeholder="ID" th:field="*{id}">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="input2">Name</label>
+      <input type="text" class="form-control" id="input2" placeholder="Name" th:field="*{name}">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="input3">City</label>
+      <input type="text" class="form-control" id="input3" placeholder="City" th:field="*{city}">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="input4">Age</label>
+      <input type="number" class="form-control" id="input4" placeholder="Age" th:field="*{age}">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+
+
+</body>
+</html>
+
+
+  
+
